@@ -43,21 +43,6 @@ Off the top of my head, we foresee the following features to be developed for th
 - [x] Example 2
   - [ ] Example 2.1
 
-<!-- - [x] Visual feedback when dragging element over droppable container
-- [ ] Grid/layout overlays positioning guides ([#14](https://github.com/vuegg/vuegg/issues/14))
-- [ ] Hold shift to maintain aspect ratio on manual resize
-- [x] Ability to zoom-in / zoom-out in the editor ([#24](https://github.com/vuegg/vuegg/issues/24))
-- [ ] Allow the insertion of raw CSS rules (expert mode)
-  - [ ] Identify possible risks
-- [ ] Add extra styles controls
-  - [ ] BoxShadow
-  - [ ] Overflow
-  - [ ] TextOverflow
-- [ ] Manage creation/edition of custom components
-  - [ ] Transition to custom component (group/ungroup)
-  - [ ] Implement custom component editor view
-- [ ] Implement tree navigator to visualize page structure -->
-
 </br>
 
 ## Get started!
