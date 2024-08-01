@@ -501,7 +501,7 @@ h2 {
 @media (min-width: 1024px) {
   .content__container {
     gap: calc(5em + 4vw);
-    margin: 0 10em;
+    margin: 0 calc(10em + 5vw);
   }
 
   .persona {
