@@ -46,12 +46,12 @@ Let's change all steps in the checkbox with your information
 
 ## Step 2
 
-### We explain you how we divided the sections and their elements.
+### We explain to you how we divided the sections and their elements.
 
 1. Start with right click on the `index.html` and click `Open with Live Server`.  
-   A new tab will open wir your live server preview and you will find the website with `add`, `edit` and `delete` Buttons for every section you want to change.
+   A new tab will open via your live server preview and you will find the website with `add`, `edit` and `delete` buttons for every section you want to change.
 
-2. We want to `edit`the XY section and therefore we click on the `edit` Button.  
+2. We want to `edit`the XY section and therefore we click on the `edit` button.  
    The component element to edit will open and you can replace the default text with your data and upload your profile picture.
    You can also `delete` the picture element, if you don't want to or have a picture of yourself ready.
 
