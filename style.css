@@ -456,6 +456,11 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  .content__container {
+    gap: calc(5em + 4vw);
+    margin: 0 calc(5em + 3vw);
+  }
+
   .experience > .content__wrapper,
   .education > .content__wrapper {
     gap: 2em;
@@ -555,5 +560,17 @@ h2 {
 
   .skill__bar {
     width: 80%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .experience > .content__wrapper > .experience__line {
+    height: 74%;
+  }
+}
+
+@media (min-width: 1536px) {
+  .content__container {
+    margin: 0 calc(8em + 12vw);
   }
 }
