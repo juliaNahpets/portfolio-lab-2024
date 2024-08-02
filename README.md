@@ -13,6 +13,7 @@ We guess there is a lot of excuses why you don't have a digital portfolio online
 Portfolio Labs goal is to give you an efficient way to do this with a basic framework and pre-built themes/designs.
 
 Saved on your local machine and deployed by yourself. Absolute self-control and also individually customizable.
+And the best thing about it? It's free! Really free and not just pseudo free.
 Check out our live demo and start cloning the repo to reach your goal!
 
 <p align="center">
@@ -27,7 +28,7 @@ Check out our live demo and start cloning the repo to reach your goal!
 - add / edit / delete in live server preview
 - Connect with GitHub
 - Connect with Netlify and experience easy deployment
-- ..
+- Disable / enable section components
 - ..
 - ..
 - ..
@@ -152,7 +153,7 @@ Deploy your own version of this portfolio.
 ## History & current state
 
 The project was born as a "flash idea" for us due to our internship at
-Coding Bootcamps Europe. We call it the portfolio studio project.
+Coding Bootcamps Europe. We call it the portfolio lab project.
 
 It will be a personal challenge to plan, create and process this project for our application road. We considered this project to be a open-source project for the whole community as one of the first priorities, so everyone who struggles with the same issues like time, creativity or laziness can easily take our project and use it and apply to new job offers with it.
 
@@ -179,7 +180,7 @@ Enjoy yourself!
 
 ## Contribute
 
-Portfolio Studio project is a concept project. Whoever symphatize with this project, feel free to fork it or contribute however possible.
+Portfolio Lab project is a concept project. Whoever symphatize with this project, feel free to fork it or contribute however possible.
 If you have any ideas or suggestions, contact us or open an issue!
 
 Help us to create something bigger for us and for you.
