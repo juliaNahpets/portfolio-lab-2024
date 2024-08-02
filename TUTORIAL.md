@@ -55,4 +55,4 @@ Let's change all steps in the checkbox with your information
    The component element to edit will open and you can replace the default text with your data and upload your profile picture.
    You can also `delete` the picture element, if you don't want to or have a picture of yourself ready.
 
-3. More to come ..
+3. More to come ...
