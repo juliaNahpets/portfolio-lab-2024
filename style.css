@@ -12,11 +12,10 @@
   font-family: "Roboto", sans-serif;
 }
 
-/* Header, Main, Footer Grid */
 .main-container {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  row-gap: 6em;
+  row-gap: 3em;
   min-height: 100vh;
 }
 
@@ -35,25 +34,24 @@ main {
 
 .content__container {
   display: grid;
-  grid-template-columns: auto;
-  gap: calc(3em + 2vw);
-  margin: 0 5%;
+  grid-template-columns: 1fr;
+  gap: calc(5em + 3vw);
+  margin: 0 calc(3em + 2vw);
 }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 2em;
 }
 
 /* Persona */
 
 .persona {
   display: grid;
-  grid-template-columns: 3fr 6fr 3fr;
-  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  row-gap: calc(2em + 2vh);
 }
 
 .persona__img_job {
-  grid-column: 1;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -82,11 +80,10 @@ h2 {
 }
 
 .persona__name_info {
-  grid-column: 2;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -95,7 +92,6 @@ h2 {
 }
 
 .persona__contact_info {
-  grid-column: 3;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -193,20 +189,20 @@ h2 {
 .container {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 1.25em;
 }
 
 .experience > .content__wrapper,
 .education > .content__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 4em;
   position: relative;
 }
 
 .experience__wrapper {
-  grid-column: 1 / span 3;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 20px;
 }
@@ -216,28 +212,17 @@ h2 {
   row-gap: 2rem;
 }
 
-.experience__company_time {
-  flex: 2;
-}
-
-.experience__timeline {
-  flex: 1;
-}
-
-.experience__job_description {
-  flex: 9;
-}
-
 .experience__company_time,
 .experience__job_description,
 .skill__wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 0.5em;
+  row-gap: 1em;
 }
 
 .experience__company_time {
-  text-align: right;
+  font-size: 0.9rem;
+  text-align: left;
 }
 
 /* Timeline*/
@@ -247,6 +232,7 @@ h2 {
 }
 
 .experience__line {
+  display: none;
   position: absolute;
   top: 6px;
   bottom: 0; /* Linie erstreckt sich über die gesamte Höhe */
@@ -264,6 +250,10 @@ h2 {
   height: 72%;
 }
 
+.experience__timeline {
+  display: none;
+}
+
 .experience__dot {
   position: absolute;
   top: 10px;
@@ -279,50 +269,36 @@ h2 {
 
 .skills > .content__wrapper {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 3rem 20px;
-}
-
-.skill__wrapper.softskills,
-.skill__wrapper.languages {
-  grid-column: 1 / span 2;
-}
-
-.skill__wrapper.hardskills {
-  grid-column: 3 / span 2;
-}
-
-.skill__wrapper.tools {
-  grid-column: 5 / span 2;
 }
 
 .skill__data_wrapper {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
 }
 
 .skill__data {
   display: flex;
-  flex-wrap: nowrap;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .skill__name {
-  flex: 2 1 50%;
-  text-align: center;
+  flex: 100%;
+  text-align: left;
 }
 
 .skill__bar_container {
-  flex: 2 1 50%;
+  flex: 100%;
   display: flex;
-  align-items: center;
-  width: 100%;
+  align-items: left;
 }
 
 .skill__bar {
-  width: 80%;
-  height: 10px;
+  width: 100%;
+  height: 5px;
   background-color: #e0e0e0;
   border-radius: 15px;
   margin: auto 0;
@@ -362,14 +338,14 @@ h2 {
 /* Certification */
 .certification > .content_wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 6fr);
+  grid-template-columns: 1fr;
   gap: 40px 20px;
 }
 
 .certification__wrapper {
   display: flex;
-  padding: 1em;
-  width: 90%;
+  padding: 0.85em;
+  width: 100%;
   margin: 0 auto;
   border: 1px solid var(--secondary-color);
   border-radius: 5px;
@@ -403,4 +379,198 @@ h2 {
 .certification__download_icon:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+@media (min-width: 640px) {
+  .persona {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    gap: 40px 20px;
+  }
+
+  .persona__img_job {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .persona__name_info {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .persona__contact_info {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .persona__contact_info_container {
+    width: 100%;
+  }
+
+  .persona__contact_label {
+    flex: 1 1 20%;
+  }
+
+  .persona__contact_value {
+    flex: 1 1 60%;
+  }
+
+  .skill__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+  }
+
+  .skills > .content__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+  }
+
+  .skill__wrapper.softskills,
+  .skill__wrapper.tools {
+    grid-column: 1 / span 2;
+  }
+
+  .skill__wrapper.hardskills,
+  .skill__wrapper.languages {
+    grid-column: 3 / span 2;
+  }
+
+  .skill__data_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .skill__bar {
+    height: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  .content__container {
+    gap: calc(5em + 4vw);
+    margin: 0 calc(5em + 3vw);
+  }
+
+  .experience > .content__wrapper,
+  .education > .content__wrapper {
+    gap: 2em;
+  }
+
+  .experience__wrapper {
+    flex-direction: row;
+  }
+
+  .experience__company_time {
+    flex: 2;
+  }
+
+  .experience__timeline {
+    flex: 1;
+  }
+
+  .experience__job_description {
+    flex: 9;
+  }
+
+  .experience__company_time {
+    font-size: 1rem;
+    text-align: right;
+  }
+
+  .experience__timeline,
+  .experience__line {
+    display: block;
+  }
+
+  .certification > .content_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);
+    gap: 40px 20px;
+  }
+  .certification__wrapper {
+    padding: 1em;
+    width: 90%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content__container {
+    gap: calc(5em + 4vw);
+    margin: 0 calc(10em + 5vw);
+  }
+
+  .persona {
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+    grid-gap: 20px;
+  }
+
+  .persona__contact_info {
+    grid-column: 3;
+  }
+
+  .persona__name_info {
+    width: 90%;
+  }
+
+  .skills > .content__wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 3rem 20px;
+  }
+
+  .skill__wrapper.softskills,
+  .skill__wrapper.languages {
+    grid-column: 1 / span 2;
+  }
+
+  .skill__wrapper.hardskills {
+    grid-column: 3 / span 2;
+  }
+
+  .skill__wrapper.tools {
+    grid-column: 5 / span 2;
+  }
+
+  .skill__data {
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+
+  .skill__name {
+    flex: 2 1 50%;
+    text-align: center;
+  }
+
+  .skill__bar_container {
+    flex: 2 1 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  .skill__bar {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .experience > .content__wrapper > .experience__line {
+    height: 74%;
+  }
+}
+
+@media (min-width: 1536px) {
+  .content__container {
+    margin: 0 calc(8em + 12vw);
+  }
 }
